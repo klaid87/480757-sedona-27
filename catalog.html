@@ -35,7 +35,72 @@
   <main>
     <section>
       <h1>Каталог</h1>
-      <!-- Здесь будет форма -->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input id="pool" type="checkbox" name="pool" checked>
+              <label for="pool">Бассейн</label>
+            </li>
+            <li>
+              <input id="parking" type="checkbox" name="parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li>
+              <input id="wi-fi" type="checkbox" name="wi-fi">
+              <label for="wi-fi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input id="hotel" type="checkbox" name="hotel" checked>
+              <label for="hotel">Гостиница</label>
+            </li>
+            <li>
+              <input id="motel" type="checkbox" name="motel" checked>
+              <label for="motel">Мотель</label>
+            </li>
+            <li>
+              <input id="apartments" type="checkbox" name="apartments" checked>
+              <label for="apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <p>
+            <label for="from">от</label>
+            <input id="from" type="text" name="from" value="от 0">
+          </p>
+          <p>
+            <label for="before">до</label>
+            <input id="before" type="text" name="before" value="до 3000">
+          </p>
+          <button type="button">показать</button>
+        </fieldset>
+        <h3>НАЙДЕНО: 3</h3>
+        <fieldset>
+          <legend>Сортировка:</legend>
+          <ul>
+            <li>
+              <input id="price-filter" type="radio" name="price" value="price">
+              <label for="price-filter">По цене</label>
+            </li>
+            <li>
+              <input id="type-filter" type="radio" name="type" value="type">
+              <label for="type-filter">По типу</label>
+            </li>
+            <li>
+              <input id="rating-filter" type="radio" name="raiting" value="rating">
+              <label for="rating-filter">По типу</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
       <ul>
         <li>
           <h3>
