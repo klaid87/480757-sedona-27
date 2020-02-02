@@ -80,11 +80,13 @@
             <label for="before">до</label>
             <input id="before" type="text" name="before" value="до 3000">
           </p>
-          <button type="button">показать</button>
+          <button type="submit">показать</button>
         </fieldset>
-        <h3>НАЙДЕНО: 3</h3>
-        <fieldset>
-          <legend>Сортировка:</legend>
+      </form>
+      <section>
+        <h2>Фильтр поиска</h2>
+        <b>Найдено: <span>3</span></b>
+          <h3>Сортировка:</h3>
           <ul>
             <li>
               <input id="price-filter" type="radio" name="filter" value="price">
@@ -98,9 +100,17 @@
               <input id="rating-filter" type="radio" name="filter" value="rating">
               <label for="rating-filter">По типу</label>
             </li>
+            <li>
+              <input id="rating-filter" type="radio" name="filter" value="up">
+              <label for="rating-filter">вверх</label>
+            </li>
+            <li>
+              <input id="rating-filter" type="radio" name="filter" value="down">
+              <label for="rating-filter">вниз</label>
+            </li>
           </ul>
-        </fieldset>
-      </form>
+      </section>
+      <h2>Результаты поиска</h2>
       <ul>
         <li>
           <h3>
