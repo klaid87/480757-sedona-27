@@ -1,0 +1,89 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'PT Sans', Arial sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ----------------------------Header------------------------------------- */
+
+.page-header {
+  background-color: #ffffff;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.menu-link {
+  color: #000000;
+  line-height: 26px;
+}
+
+.menu-list a:hover,
+.menu-list a:focus {
+  color: #81b3d2;
+}
+
+/* ----------------------------Main------------------------------------- */
+
+.greeting {
+  background-image: url("../img/background/background\ logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages-heading {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.advantages-text {
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.feedback-heading {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.feedback-text {
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+}
