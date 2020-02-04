@@ -92,10 +92,14 @@ img {
   color: #333333;
 }
 
-.button-search {
+.button {
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
+  border: none;
+}
+
+.button-search {
   background-color: #766357;
 }
 
@@ -113,6 +117,14 @@ img {
   background-color: #ffffff;
 }
 
+.feedback-field {
+  background-color: #f2f2f2;
+}
+
 .feedback-signature {
   line-height: 26px;
+}
+
+.button-find {
+  background-color: #81b3d2;
 }
