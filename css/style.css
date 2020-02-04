@@ -58,6 +58,10 @@ img {
   color: #81b3d2;
 }
 
+.menu-list a:active {
+  color: #cacaca;
+}
+
 /* ----------------------------Main------------------------------------- */
 
 .greeting {
@@ -86,4 +90,29 @@ img {
   line-height: 24px;
   font-weight: 400;
   color: #333333;
+}
+
+.button-search {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.button-search:hover,
+.button-search:focus {
+  background-color: #604e43;
+}
+
+.button-search:active {
+  background-color: #503e33;
+  color: #928a85;
+}
+
+.feedback-form {
+  background-color: #ffffff;
+}
+
+.feedback-signature {
+  line-height: 26px;
 }
