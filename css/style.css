@@ -65,8 +65,7 @@ img {
 /* ----------------------------Main------------------------------------- */
 
 .greeting {
-  background-image: url("../img/background/background\ logo.jpg");
-  background-position: center;
+  background-image: url("../img/background/backgroundlogo.jpg");
   background-repeat: no-repeat;
 }
 
@@ -97,6 +96,7 @@ img {
   line-height: 26px;
   color: #ffffff;
   border: none;
+  text-transform: uppercase;
 }
 
 .button-search {
@@ -127,4 +127,40 @@ img {
 
 .button-find {
   background-color: #81b3d2;
+}
+
+.button-find:hover,
+.button-find:focus {
+  background-color: #669ec0;
+}
+
+.button-find:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
+/* ----------------------------Footer------------------------------------- */
+
+.page-footer {
+  background-color: rgba(253, 253, 253, 0.9);
+}
+
+.link-hashtag,
+.link-phone {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.link-hashtag:hover,
+.link-phone:hover {
+  text-decoration: underline;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-link {
+
 }
