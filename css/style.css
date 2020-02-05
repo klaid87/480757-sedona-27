@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   font-family: 'PT Sans', Arial sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -13,6 +14,10 @@ body {
   background-color: #f2f2f2;
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+.catalog-index {
+  background-color: #fefefe;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -97,6 +102,7 @@ img {
   color: #ffffff;
   border: none;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .button-search {
@@ -146,6 +152,72 @@ img {
 .button-find:active {
   background-color: #5496bd;
   color: #88b6d1;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-heading {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.catalog-link {
+  color: #000000;
+}
+
+.catalog-link:hover,
+.catalog-link:focus {
+  color: #81b3d2;
+}
+
+.catalog-link:active {
+  color: #cacaca;
+}
+
+.structure,
+.cost {
+  color: #333333;
+  font-weight: 400;
+}
+
+.link-details {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.link-details:hover,
+.link-details:focus {
+  background-color: #669ec0;
+}
+
+.link-details:active {
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+
+.button-order {
+  background-color: #766357;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.button-order:hover,
+.button-order:focus {
+  background-color: #604e43;
+}
+
+.button-order:active {
+  background-color: #503e33;
+  color: #8b827c;
+}
+
+.rating {
+  background-color: #f2f2f2;
+  font-weight: 400;
 }
 
 /* ----------------------------Footer------------------------------------- */

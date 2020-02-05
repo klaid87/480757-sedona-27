@@ -9,7 +9,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="catalog-index">
 
   <header class="page-header">
     <nav class="main-navigation">
@@ -34,8 +34,8 @@
   </header>
 
   <main>
-    <section>
-      <h1>Каталог</h1>
+    <section class="filter">
+      <h1 class="visualli-hidden">Каталог</h1>
       <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend>Инфраструктура:</legend>
@@ -84,8 +84,8 @@
           <button type="submit">показать</button>
         </fieldset>
       </form>
-      <section>
-        <h2>Фильтр поиска</h2>
+      <section class="search filter">
+        <h2 class="visually-hidden">Фильтр поиска</h2>
         <b>Найдено: <span>3</span></b>
           <h3>Сортировка:</h3>
           <ul>
@@ -111,60 +111,60 @@
             </li>
           </ul>
       </section>
-      <h2>Результаты поиска</h2>
-      <ul>
-        <li>
-          <h3>
-            <a href="#">Amara Resort & Spa></a>
+      <h2 class="visually-hidden">Результаты поиска</h2>
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <h3 class="catalog-heading">
+            <a class="catalog-link" href="#">Amara Resort & Spa></a>
           </h3>
-          <img src="img/hotels/amara.jpg" width="135" height="90" alt="Картинка гостиницы">
+          <img class="catalog-image" src="img/hotels/amara.jpg" width="135" height="90" alt="Картинка гостиницы">
           <ul>
             <li></li>
             <li></li>
             <li></li>
             <li></li>
           </ul>
-          <span>Гостиница</span>
-          <span>От 4000 Р.</span>
+          <span class="structure">Гостиница</span>
+          <span class="cost">От 4000 Р.</span>
           <p>
-            <a href="#">Подробнее</a>
-            <button type="button">Забронировать</button>
-            <span>Рейтинг: 8,5</span>
+            <a class="link-details" href="#">Подробнее</a>
+            <button class="button-order" type="button">Забронировать</button>
+            <span class="rating">Рейтинг: 8,5</span>
           </p>
         </li>
-        <li>
-          <h3>
-            <a href="#">Desert Quail Inn></a>
+        <li class="catalog-item">
+          <h3 class="catalog-heading">
+            <a class="catalog-link" href="#">Desert Quail Inn></a>
           </h3>
-          <img src="img/hotels/desert.jpg" width="135" height="90" alt="Картинка мотеля">
+          <img class="catalog-image" src="img/hotels/desert.jpg" width="135" height="90" alt="Картинка мотеля">
           <ul>
             <li></li>
             <li></li>
             <li></li>
           </ul>
-          <span>Мотель</span>
-          <span>От 3000 Р.</span>
+          <span class="structure">Мотель</span>
+          <span class="cost">От 3000 Р.</span>
           <p>
-            <a href="#">Подробнее</a>
-            <button type="button">Забронировать</button>
-            <span>Рейтинг: 8,9</span>
+            <a class="link-details" href="#">Подробнее</a>
+            <button class="button-order" type="button">Забронировать</button>
+            <span class="rating">Рейтинг: 8,9</span>
           </p>
         </li>
-        <li>
-          <h3>
-            <a href="#">Villas at Poco Diablo</a>
+        <li class="catalog-item">
+          <h3 class="catalog-heading">
+            <a class="catalog-link" href="#">Villas at Poco Diablo</a>
           </h3>
-          <img src="img/hotels/villas.jpg" width="135" height="90" alt="Картинка аппартаментов">
+          <img class="catalog-image" src="img/hotels/villas.jpg" width="135" height="90" alt="Картинка аппартаментов">
           <ul>
             <li></li>
             <li></li>
           </ul>
-          <span>Апартаменты</span>
-          <span>От 2000 Р.</span>
+          <span class="structure">Апартаменты</span>
+          <span class="cost">От 2000 Р.</span>
           <p>
-            <a href="#">Подробнее</a>
-            <button type="button">Забронировать</button>
-            <span>Рейтинг: 9,2</span>
+            <a class="link-details" href="#">Подробнее</a>
+            <button class="button-order" type="button">Забронировать</button>
+            <span class="rating">Рейтинг: 9,2</span>
           </p>
         </li>
       </ul>
