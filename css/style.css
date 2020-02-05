@@ -43,6 +43,11 @@ img {
   max-width: 100%;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* ----------------------------Header------------------------------------- */
 
 .page-header {
@@ -67,11 +72,21 @@ img {
   color: #cacaca;
 }
 
+fieldset {
+  border: none;
+}
+
 /* ----------------------------Main------------------------------------- */
 
 .greeting {
   background-image: url("../img/background/backgroundlogo.jpg");
   background-repeat: no-repeat;
+  text-align: center;
+}
+
+.advantages {
+  background-color: #ffffff;
+  text-align: center;
 }
 
 .advantages-heading {
@@ -83,6 +98,14 @@ img {
   line-height: 26px;
   font-weight: 400;
   color: #333333;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.feedback {
+  background-color: #ffffff;
 }
 
 .feedback-heading {
@@ -219,6 +242,34 @@ img {
   background-color: #f2f2f2;
   font-weight: 400;
 }
+.virtues-heading {
+  font-size: 21px;
+  font-weight: 21px;
+}
+
+.virtues-text {
+  font-weight: 400;
+}
+
+.advice-list {
+  list-style: none;
+}
+
+.advice-heading {
+  font-size: 21px;
+  font-weight: 21px;
+  color: #000000;
+}
+
+.advice-text {
+  font-weight: 400;
+  color: #333333;
+}
+
+.infrastructure {
+  border: none;
+}
+
 
 /* ----------------------------Footer------------------------------------- */
 
