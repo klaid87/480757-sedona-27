@@ -106,16 +106,16 @@ fieldset {
   list-style: none;
 }
 
-.feedback {
+.search {
   background-color: #ffffff;
 }
 
-.feedback-heading {
+.search-heading {
   font-size: 30px;
   line-height: 36px;
 }
 
-.feedback-text {
+.search-text {
   line-height: 24px;
   font-weight: 400;
   color: #333333;
@@ -144,7 +144,7 @@ fieldset {
   color: #928a85;
 }
 
-.feedback-form {
+.search-form {
   background-color: #ffffff;
 }
 
@@ -161,7 +161,7 @@ fieldset {
   background-color: #ffffff;
 }
 
-.feedback-signature {
+.search-label {
   line-height: 26px;
 }
 
