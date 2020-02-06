@@ -284,7 +284,8 @@ fieldset {
 }
 
 .infrastructure-list,
-.type-list {
+.type-list,
+.search-filter-list {
   list-style: none;
 }
 
@@ -325,6 +326,24 @@ fieldset {
 
 .search-results {
   background-color: #fefefe;
+}
+
+.found,
+.found-quantity {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.search-filter-subheading {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.radio-button {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 /* ----------------------------Footer------------------------------------- */
