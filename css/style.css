@@ -92,6 +92,8 @@ fieldset {
 .advantages-heading {
   font-size: 21px;
   line-height: 26px;
+  width: 445px;
+  margin:0 auto;
 }
 
 .advantages-text {
@@ -242,26 +244,26 @@ fieldset {
   background-color: #f2f2f2;
   font-weight: 400;
 }
-.virtues-heading {
+.advantages-title {
   font-size: 21px;
   font-weight: 21px;
 }
 
-.virtues-text {
+.item-text {
   font-weight: 400;
 }
 
-.advice-list {
+.advantages-sublist {
   list-style: none;
 }
 
-.advice-heading {
+.advantages-subtitle {
   font-size: 21px;
   font-weight: 21px;
   color: #000000;
 }
 
-.advice-text {
+.advantages-subtext {
   font-weight: 400;
   color: #333333;
 }
