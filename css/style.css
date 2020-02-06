@@ -63,12 +63,12 @@ img {
   line-height: 26px;
 }
 
-.menu-list a:hover,
-.menu-list a:focus {
+.menu-link:hover,
+.menu-link:focus {
   color: #81b3d2;
 }
 
-.menu-list a:active {
+.menu-link:active {
   color: #cacaca;
 }
 
@@ -122,24 +122,29 @@ fieldset {
 }
 
 .button {
-  font-size: 21px;
-  line-height: 26px;
   color: #ffffff;
   border: none;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 700;
+  cursor: pointer;
 }
 
-.button-search {
+.button-primary {
   background-color: #766357;
 }
 
-.button-search:hover,
-.button-search:focus {
+.search-modal-button {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.button-primary:hover,
+.button-primary:focus {
   background-color: #604e43;
 }
 
-.button-search:active {
+.button-primary:active {
   background-color: #503e33;
   color: #928a85;
 }
@@ -165,16 +170,16 @@ fieldset {
   line-height: 26px;
 }
 
-.button-find {
+.button-secondary {
   background-color: #81b3d2;
 }
 
-.button-find:hover,
-.button-find:focus {
+.button-secondary:hover,
+.button-secondary:focus {
   background-color: #669ec0;
 }
 
-.button-find:active {
+.button-secondary:active {
   background-color: #5496bd;
   color: #88b6d1;
 }
@@ -222,24 +227,6 @@ fieldset {
   color: #94b9d2;
 }
 
-.button-order {
-  background-color: #766357;
-  color: #ffffff;
-  border: none;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.button-order:hover,
-.button-order:focus {
-  background-color: #604e43;
-}
-
-.button-order:active {
-  background-color: #503e33;
-  color: #8b827c;
-}
-
 .rating {
   background-color: #f2f2f2;
   font-weight: 400;
@@ -272,9 +259,7 @@ fieldset {
   border: none;
 }
 
-.infrastructure-heading,
-.type-heading,
-.cost-heading {
+.filter-heading {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
@@ -285,9 +270,8 @@ fieldset {
   background-repeat: no-repeat;
 }
 
-.infrastructure-list,
-.type-list,
-.search-filter-list {
+.filter-list,
+.sort-filter-list {
   list-style: none;
 }
 
@@ -310,10 +294,9 @@ fieldset {
 .filter-button {
   background-color: transparent;
   border: 2px solid #ffffff;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .filter-button:hover,
@@ -322,7 +305,7 @@ fieldset {
   color: #000000;
 }
 
-.search-filter {
+.sort-filter {
   background-color: #fefefe;
 }
 
@@ -330,13 +313,13 @@ fieldset {
   background-color: #fefefe;
 }
 
-.found,
-.found-quantity {
+.sort-title,
+.sort-title-quantity {
   font-size: 21px;
   line-height: 26px;
 }
 
-.search-filter-subheading {
+.sort-filter-subheading {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -346,6 +329,16 @@ fieldset {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+}
+
+.menu-link--active {
+  color: #766357;
+}
+
+.menu-link--active:hover,
+.menu-link--active:focus,
+.menu-link--active:active {
+  color:  #766357;
 }
 
 /* ----------------------------Footer------------------------------------- */
