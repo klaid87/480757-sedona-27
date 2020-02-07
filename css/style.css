@@ -56,8 +56,11 @@ img {
 .menu-list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding: 0;
+  margin: 0;
+  padding: 20px 0;
 }
 
 .menu-link {
