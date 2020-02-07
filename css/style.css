@@ -10,7 +10,6 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-
   background-color: #f2f2f2;
   background-position: top center;
   background-repeat: no-repeat;
@@ -56,6 +55,9 @@ img {
 
 .menu-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu-link {
@@ -74,6 +76,13 @@ img {
 
 fieldset {
   border: none;
+}
+
+.logo-link {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ----------------------------Main------------------------------------- */
@@ -128,6 +137,8 @@ fieldset {
   text-align: center;
   font-weight: 700;
   cursor: pointer;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .button-primary {
@@ -212,21 +223,6 @@ fieldset {
   font-weight: 400;
 }
 
-.link-details {
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-
-.link-details:hover,
-.link-details:focus {
-  background-color: #669ec0;
-}
-
-.link-details:active {
-  background-color: #5496bd;
-  color: #94b9d2;
-}
-
 .rating {
   background-color: #f2f2f2;
   font-weight: 400;
@@ -295,8 +291,6 @@ fieldset {
   background-color: transparent;
   border: 2px solid #ffffff;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
 }
 
 .filter-button:hover,
@@ -325,7 +319,7 @@ fieldset {
   font-weight: 400;
 }
 
-.radio-button {
+.sort-label {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -340,6 +334,12 @@ fieldset {
 .menu-link--active:active {
   color:  #766357;
 }
+
+.search-submit {
+  font-size: 21px;
+  line-height: 26px;
+}
+
 
 /* ----------------------------Footer------------------------------------- */
 
