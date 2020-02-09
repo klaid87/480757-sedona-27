@@ -45,6 +45,7 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 /* ----------------------------Header------------------------------------- */
@@ -85,12 +86,14 @@ fieldset {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 
 /* ----------------------------Main------------------------------------- */
 
 .greeting {
+  position: relative;
   background-image: url("../img/background/backgroundlogo.jpg");
   background-repeat: no-repeat;
   text-align: center;
@@ -100,7 +103,6 @@ fieldset {
 
 .advantages {
   background-color: #ffffff;
-  text-align: center;
 }
 
 .advantages-heading {
@@ -108,15 +110,19 @@ fieldset {
   line-height: 26px;
   width: 617px;
   margin:0 auto;
+  text-align: center;
 }
 
 .advantages-text {
   line-height: 26px;
   font-weight: 400;
   color: #333333;
+  text-align: center;
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -129,12 +135,16 @@ fieldset {
 .search-heading {
   font-size: 30px;
   line-height: 36px;
+  text-align: center;
 }
 
 .search-text {
   line-height: 24px;
   font-weight: 400;
   color: #333333;
+  width: 450px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .button {
@@ -155,6 +165,10 @@ fieldset {
 .search-modal-button {
   font-size: 21px;
   line-height: 26px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 35px 140px;
 }
 
 .button-primary:hover,
@@ -169,6 +183,11 @@ fieldset {
 
 .search-form {
   background-color: #ffffff;
+  width: 568px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 668px;
 }
 
 .feedback-field {
@@ -204,11 +223,15 @@ fieldset {
 
 .catalog-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-heading {
   font-size: 21px;
   line-height: 26px;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-link {
@@ -230,13 +253,14 @@ fieldset {
   font-weight: 400;
 }
 
-.rating {
+.catalog-item-rating {
   background-color: #f2f2f2;
   font-weight: 400;
 }
 .advantages-title {
   font-size: 21px;
   font-weight: 21px;
+  max-width: 130px;
 }
 
 .item-text {
@@ -245,6 +269,9 @@ fieldset {
 
 .advantages-sublist {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .advantages-subtitle {
@@ -276,6 +303,8 @@ fieldset {
 .filter-list,
 .sort-filter-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .input-checkbox + label {
@@ -308,6 +337,8 @@ fieldset {
 
 .sort-filter {
   background-color: #fefefe;
+  display: flex;
+  align-items: center;
 }
 
 .search-results {
@@ -352,14 +383,89 @@ fieldset {
   flex-direction: column;
 }
 
-.search {
-  display: flex;
-  flex-direction: column;
+.poligon {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
 }
 
-.search-form {
+.advantages-item {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.advantages-item:nth-child(1),
+.advantages-item:nth-child(2) {
+  width: 100%;
+}
+
+.advantages-item:nth-child(3),
+.advantages-item:nth-child(4),
+.advantages-item:nth-child(5) {
+  max-width: 33.3% ;
+}
+
+.advantages-subitem {
+  max-width: 33.3%;
+}
+
+.advantages-item-wrapper {
+  max-width: 285px;
+  text-align: center;
+  padding: 0 57px;
+}
+
+.advantages-image--right {
+  order: -1;
+}
+
+.field-wrapper:nth-child(1),
+.field-wrapper:nth-child(2) {
+  width: 100%;
+}
+
+.field-wrapper:nth-child(3),
+.field-wrapper:nth-child(4) {
+  width: 50%;
+}
+
+.sort-filter-list {
+  display: flex;
+}
+
+.catalog-item {
+  display: flex;
+  border-bottom: 1px solid #928a85;
+}
+
+.catalog-image {
+  order: -1;
+  margin-right: 30px;
+}
+
+.catalog-content-wrapper {
+  
+}
+
+.rating-stars-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-discription-wrapper {
+  
+}
+
+.filter-form {
+  display: flex;
+}
+
+.filter-item {
+  padding-bottom: 23px;
+  display: flex;
+  align-items: center;
 }
 
 /* ----------------------------Footer------------------------------------- */

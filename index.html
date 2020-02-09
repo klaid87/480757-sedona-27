@@ -39,19 +39,22 @@
         <h1 class="visually-hidden">Седона</h1>
         <img class="greeting-image" src="img/svg/intro-welcome.svg" width="480" height="372"
           alt="Welcom to the gorgeous Because the Grand Canyon sucks">
+        <svg class="poligon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 57" width="1200" height="59">
+          <path d="M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z" fill="#fff" />
+        </svg>
       </section>
       <section class="advantages">
-        <div class="advatages-heading-wrapper">
-          <h2 class="advantages-heading">
-            <span class="advantages-heading-part">Седона — небольшой городок в Аризоне,</span>
-            <span class="advantages-heading-part">заслуживающий большего!</span>
-          </h2>
-          <p class="advantages-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
+        <h2 class="advantages-heading">
+          Седона — небольшой городок в Аризоне,
+          заслуживающий большего!
+        </h2>
+        <p class="advantages-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ol class="advantages-list">
           <li class="advantages-item">
-            <h3 class="advantages-title heading--light">Настоящий городок</h3>
-            <p class="item-text text--light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="advantages-item-wrapper">
+              <h3 class="advantages-title heading--light">Настоящий городок</h3>
+              <p class="item-text text--light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
             <img class="advantages-image" src="img/places/sedona.jpg" width="800" height="256" alt="Картинка Седоны">
             <ul class="advantages-sublist">
               <li class="advantages-subitem">
@@ -69,9 +72,11 @@
             </ul>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title heading--light">Там есть Мост дьявола</h3>
-            <p class="item-text text--light">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <img class="advantages-image" src="img/places/devil bridge.jpg" width="800" height="256"
+            <div class="advantages-item-wrapper">
+              <h3 class="advantages-title heading--light">Там есть Мост дьявола</h3>
+              <p class="item-text text--light">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <img class="advantages-image advantages-image--right" src="img/places/devil-bridge.jpg" width="800" height="256"
               alt="Картинка Мост дьявола">
           </li>
           <li class="advantages-item">
@@ -90,7 +95,7 @@
       </section>
       <section class="search">
         <h2 class="search-heading">Заинтересовались?</h2>
-        <p class="searc-text">Укажите предполагаемые даты поездки,
+        <p class="search-text">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="button button-primary search-modal-button" type="button">Поиск гостиницы в седоне</button>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
