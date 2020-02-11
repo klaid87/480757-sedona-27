@@ -300,6 +300,7 @@ fieldset {
   font-size: 21px;
   font-weight: 21px;
   color: #000000;
+  margin: 0;
 }
 
 .advantages-subtext {
@@ -430,6 +431,7 @@ fieldset {
 
 .advantages-subitem {
   max-width: 33.3%;
+  text-align: center;
 }
 
 .advantages-item-wrapper {
@@ -489,6 +491,35 @@ fieldset {
 .catalog-content-wrapper {
   display: flex;
   flex-wrap: wrap;
+}
+
+.advantages-subtitle::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 82px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding-top: 60px;
+}
+
+.advantages-subtitle--house::before {
+  background-image: url("../img/svg/icon-house.svg");
+}
+
+.advantages-subtitle--burger::before {
+  background-image: url("../img/svg/icon-burger.svg");
+}
+
+.advantages-subtitle--box::before {
+  background-image: url("../img/svg/icon-box.svg");
+}
+
+.social-link {
+  width: 46px;
+  height: 48px;
+  background-color: #669ec0;
 }
 
 /* ----------------------------Footer------------------------------------- */
