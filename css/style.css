@@ -57,10 +57,10 @@ img {
 .menu-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0;
   margin: 0;
-  padding: 15px 0;
 }
 
 .menu-link {
@@ -89,6 +89,20 @@ fieldset {
   z-index: 1;
 }
 
+.menu-item {
+  padding: 0 73px;
+  margin-top: 20px;
+  margin-bottom: 17px;
+}
+
+.menu-item:nth-child(2) {
+  margin-right: auto;
+}
+
+.greeting-image {
+  margin-bottom: 75px;
+}
+
 
 /* ----------------------------Main------------------------------------- */
 
@@ -98,7 +112,6 @@ fieldset {
   background-repeat: no-repeat;
   text-align: center;
   padding-top: 75px;
-  padding-bottom: 145px;
 }
 
 .advantages {
@@ -111,6 +124,8 @@ fieldset {
   width: 617px;
   margin:0 auto;
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .advantages-text {
@@ -118,6 +133,8 @@ fieldset {
   font-weight: 400;
   color: #333333;
   text-align: center;
+  margin: 0;
+  padding-bottom: 52px;
 }
 
 .advantages-list {
@@ -260,11 +277,16 @@ fieldset {
 .advantages-title {
   font-size: 21px;
   font-weight: 21px;
-  max-width: 130px;
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 65px;
+  margin-right: 140px;
+  margin-left: 140px;
 }
 
 .item-text {
   font-weight: 400;
+  margin: 0;
 }
 
 .advantages-sublist {
@@ -411,9 +433,12 @@ fieldset {
 }
 
 .advantages-item-wrapper {
-  max-width: 285px;
+  max-width: 33.3%;
   text-align: center;
-  padding: 0 57px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #81b3d2;
+  color: #ffffff;
 }
 
 .advantages-image--right {
@@ -465,7 +490,6 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
 }
-
 
 /* ----------------------------Footer------------------------------------- */
 
