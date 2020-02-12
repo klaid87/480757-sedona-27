@@ -162,6 +162,8 @@ fieldset {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 38px;
 }
 
 .search-text {
@@ -171,6 +173,7 @@ fieldset {
   width: 450px;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 53px;
 }
 
 .button {
@@ -214,6 +217,7 @@ fieldset {
   flex-wrap: wrap;
   position: absolute;
   left: 668px;
+  padding: 55px;
 }
 
 .feedback-field {
@@ -409,6 +413,7 @@ fieldset {
 .search-submit {
   font-size: 21px;
   line-height: 26px;
+  padding: 20px 195px;
 }
 
 .advatages-heading-wrapper {
@@ -436,6 +441,7 @@ fieldset {
 .advantages-item:nth-child(n+3),
 .advantages-subitem {
   max-width: calc(100% / 3);
+  padding: 40px 60px 40px;
 }
 
 .advantages-subitem {
@@ -453,6 +459,11 @@ fieldset {
   background-color: #81b3d2;
   color: #ffffff;
   padding: 40px 60px 40px;
+}
+
+.field-wrapper {
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .field-wrapper:nth-child(1),
@@ -524,12 +535,6 @@ fieldset {
   background-image: url("../img/svg/icon-box.svg");
 }
 
-.social-link {
-  width: 46px;
-  height: 48px;
-  background-color: #669ec0;
-}
-
 .advantages-image-left {
   width: 800px;
   height: 256px;
@@ -551,6 +556,10 @@ fieldset {
   justify-content: space-around;
 }
 
+.footer-contact {
+  margin: 0;
+}
+
 .link-hashtag,
 .link-phone {
   font-size: 21px;
@@ -565,4 +574,32 @@ fieldset {
 
 .social-list {
   list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.social-item {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.copyright-link {
+  display: block;
+  width: 127px;
+  height: 27px;
+}
+
+.copyright-text {
+  margin-right: 8px;
 }
