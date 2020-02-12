@@ -560,6 +560,7 @@ fieldset {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 35px 0;
 }
 
 .footer-contact {
@@ -609,3 +610,5 @@ fieldset {
 .copyright-text {
   margin-right: 8px;
 }
+
+
