@@ -442,7 +442,13 @@ fieldset {
 .advantages-subitem {
   max-width: calc(100% / 3);
   padding: 40px 60px 40px;
+  flex-direction: column;
+  align-items: center;
 }
+
+.advantages-item:nth-child(n+3) {
+  background-color: #eeeeee;
+} 
 
 .advantages-subitem {
   display: flex;
