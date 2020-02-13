@@ -489,6 +489,7 @@ fieldset {
 .catalog-item {
   display: flex;
   border-bottom: 1px solid #928a85;
+  padding: 32px 72px;
 }
 
 .catalog-image {
@@ -553,6 +554,18 @@ fieldset {
   background: url("../img/background/devil-bridge.jpg") no-repeat center;
 }
 
+.catalog-content-wrapper-left {
+  margin-right: auto;
+}
+
+input[type="radio"] + label {
+  color: #5496bd;
+}
+
+input[type="radio"] + label:hover {
+  color: #766357;
+}
+
 /* ----------------------------Footer------------------------------------- */
 
 .page-footer {
@@ -611,4 +624,15 @@ fieldset {
   margin-right: 8px;
 }
 
+.social-item:hover,
+.social-item:focus {
+  background-color: #669ec0;
+}
 
+.social-item:active {
+  background-color: #5496bd;
+}
+
+.social-item:active path {
+  opacity: 0.5;
+}
