@@ -330,6 +330,7 @@ fieldset {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+  margin-bottom: 28px;
 }
 
 .filter {
@@ -470,6 +471,9 @@ fieldset {
 .field-wrapper {
   margin: 0;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .field-wrapper:nth-child(1),
@@ -506,12 +510,14 @@ fieldset {
 
 .filter-form {
   display: flex;
+  padding-top: 30px;
+  padding-right: 72px;
+  padding-bottom: 30px;
+  padding-left: 72px;
 }
 
 .filter-item {
   padding-bottom: 23px;
-  display: flex;
-  align-items: center;
 }
 
 .catalog-content-wrapper {
@@ -519,7 +525,7 @@ fieldset {
   flex-wrap: wrap;
 }
 
-.advantages-subtitle::before {
+.advantages-subitem::before {
   content: "";
   display: block;
   width: 80px;
@@ -530,15 +536,15 @@ fieldset {
   margin-bottom: 30px;
 }
 
-.advantages-subtitle--house::before {
+.advantages-subitem--house::before {
   background-image: url("../img/svg/icon-house.svg");
 }
 
-.advantages-subtitle--burger::before {
+.advantages-subitem--burger::before {
   background-image: url("../img/svg/icon-burger.svg");
 }
 
-.advantages-subtitle--box::before {
+.advantages-subitem--box::before {
   background-image: url("../img/svg/icon-box.svg");
 }
 
@@ -564,6 +570,73 @@ input[type="radio"] + label {
 
 input[type="radio"] + label:hover {
   color: #766357;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.feedback-field-date {
+  width: 345px;
+  padding-top: 14px;
+  padding-right: 9px;
+  padding-bottom: 14px;
+  padding-left: 13px;
+}
+
+.feedback-field-number {
+  width: 114px;
+  padding: 14px;
+}
+
+.feedback-field-date::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: url("../img/svg/calendar.svg") no-repeat center;
+}
+
+.input-checkbox {
+  display: none;
+}
+
+.input-checkbox + label::before {
+  content: "";
+  background-image: url("../img/svg/checkbox-off.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.input-checkbox:checked + label::before {
+  content: "";
+  background-image: url("../img/svg/checkbox-on.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.filter-form-group-first {
+  margin-right: 115px;
+}
+
+.filter-form-group-second {
+  margin-right: auto;
 }
 
 /* ----------------------------Footer------------------------------------- */
