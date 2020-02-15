@@ -298,6 +298,8 @@ fieldset {
 .catalog-item-rating {
   background-color: #f2f2f2;
   font-weight: 400;
+  display: block;
+  padding: 6px 16px;
 }
 .advantages-title {
   text-align: center;
@@ -659,6 +661,10 @@ input::-webkit-inner-spin-button {
   background-image: url("../img/svg/star.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.catalog-content-wrapper-right {
+  display: flex;
 }
 
 /* ----------------------------Footer------------------------------------- */
