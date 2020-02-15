@@ -189,6 +189,8 @@ fieldset {
 
 .button-primary {
   background-color: #766357;
+  padding: 0;
+  padding: 6px 17px;
 }
 
 .search-modal-button {
@@ -262,6 +264,16 @@ fieldset {
   line-height: 26px;
   margin: 0;
   padding: 0;
+  margin-bottom: 10px;
+}
+
+.catalog-discription-wrapper {
+  margin-bottom: 10px;
+}
+
+.button--details {
+  display: inline-block;
+  padding: 6px 17px;
 }
 
 .catalog-link {
