@@ -507,7 +507,7 @@ fieldset {
 
 .catalog-item {
   display: flex;
-  border-bottom: 1px solid #928a85;
+  border-bottom: 2px solid #f2f2f2;
   padding: 32px 72px;
 }
 
@@ -665,6 +665,11 @@ input::-webkit-inner-spin-button {
 
 .catalog-content-wrapper-right {
   display: flex;
+}
+
+.sort-filter {
+  padding: 32px 72px;
+  border-bottom: 2px solid #f2f2f2;
 }
 
 /* ----------------------------Footer------------------------------------- */
