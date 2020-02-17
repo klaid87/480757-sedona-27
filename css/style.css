@@ -668,10 +668,6 @@ input::-webkit-inner-spin-button {
   background-position: center;
 }
 
-.catalog-content-wrapper-right {
-  display: flex;
-}
-
 .sort-filter {
   padding: 32px 72px;
   border-bottom: 2px solid #f2f2f2;
