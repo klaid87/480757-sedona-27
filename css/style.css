@@ -678,6 +678,7 @@ input::-webkit-inner-spin-button {
 .page-footer {
   background-color: rgba(253, 253, 253, 0.9);
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-top: 35px;
   padding-right: 100px;
@@ -687,7 +688,6 @@ input::-webkit-inner-spin-button {
 
 .footer-contact {
   margin: 0;
-  margin-right: 175px;
 }
 
 .link-hashtag,
@@ -705,9 +705,8 @@ input::-webkit-inner-spin-button {
 .social-list {
   list-style: none;
   display: flex;
-  margin: 0;
   padding: 0;
-  margin-right: 230px;
+  margin: 0 auto;
 }
 
 .social-item {
