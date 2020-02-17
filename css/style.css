@@ -99,17 +99,18 @@ fieldset {
 }
 
 .menu-item {
-  padding: 0 73px;
+  width: calc(100% / 4);
   margin-top: 20px;
   margin-bottom: 17px;
 }
 
-.menu-item:nth-child(2) {
-  margin-right: auto;
+.menu-item:nth-child(3),
+.menu-item:nth-child(4) {
+  text-align: right;
 }
 
-.greeting-image {
-  margin-bottom: 75px;
+.main-navigation {
+  padding: 0 72px;
 }
 
 
@@ -120,7 +121,7 @@ fieldset {
   background-image: url("../img/background/backgroundlogo.jpg");
   background-repeat: no-repeat;
   text-align: center;
-  padding-top: 75px;
+  padding: 75px 0;
 }
 
 .advantages {
@@ -159,10 +160,11 @@ fieldset {
 }
 
 .search-heading {
+  max-width: 445px;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 38px;
 }
 
@@ -194,6 +196,7 @@ fieldset {
 }
 
 .search-modal-button {
+  max-width: 570px;
   font-size: 21px;
   line-height: 26px;
   position: relative;
@@ -214,11 +217,12 @@ fieldset {
 
 .search-form {
   background-color: #ffffff;
-  width: 568px;
+  max-width: 568px;
   display: flex;
   flex-wrap: wrap;
   position: absolute;
-  left: 668px;
+  left: 50%;
+  transform: translatex(-50%);
   padding: 55px;
 }
 
@@ -563,16 +567,17 @@ fieldset {
   background-image: url("../img/svg/icon-box.svg");
 }
 
-.advantages-image-left {
+.advantages-image-right {
   width: 800px;
   height: 256px;
   background: url("../img/background/sedona.jpg") no-repeat center;
 }
 
-.advatages-image-right {
+.advatages-image-left {
   width: 800px;
   height: 256px;
   background: url("../img/background/devil-bridge.jpg") no-repeat center;
+  order: -1;
 }
 
 .catalog-content-wrapper-left {
@@ -678,12 +683,15 @@ input::-webkit-inner-spin-button {
   background-color: rgba(253, 253, 253, 0.9);
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 35px 0;
+  padding-top: 35px;
+  padding-right: 100px;
+  padding-bottom: 35px;
+  padding-left: 125px;
 }
 
 .footer-contact {
   margin: 0;
+  margin-right: 175px;
 }
 
 .link-hashtag,
@@ -702,16 +710,25 @@ input::-webkit-inner-spin-button {
   list-style: none;
   display: flex;
   margin: 0;
+  padding: 0;
+  margin-right: 230px;
 }
 
 .social-item {
+  margin-right: 5px;
+}
+
+.social-link {
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
-  margin-right: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.social-item:last-child {
+  margin-right: 0;
 }
 
 .footer-copyright {
@@ -725,12 +742,12 @@ input::-webkit-inner-spin-button {
   width: 127px;
 }
 
-.copyright-link:hover path,
-.copyright-link:focus path {
+.copyright-link:hover .copyright-icon,
+.copyright-link:focus .copyright-icon {
   fill: #81b3d2;
 }
 
-.copyright-link:active path {
+.copyright-link:active .copyright-icon {
   fill: #bdbbbc;
 }
 
@@ -738,15 +755,15 @@ input::-webkit-inner-spin-button {
   margin-right: 8px;
 }
 
-.social-item:hover,
-.social-item:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: #669ec0;
 }
 
-.social-item:active {
+.social-link:active {
   background-color: #5496bd;
 }
 
-.social-item:active path {
+.social-link:active .social-icon {
   opacity: 0.5;
 }
