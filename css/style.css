@@ -154,6 +154,16 @@ fieldset {
   list-style: none;
   margin: 0;
   padding: 0;
+  list-style-type: none; 
+  counter-reset: item; 
+}
+
+.advantages-item-wrapper::before,
+.advantages-item:nth-child(n+3)::before {
+  content: '- №'counter(item)' -'; /* Добавляем к числам скобку */ 
+  counter-increment: item; /* Задаём имя счетчика */
+  font-weight: 400;
+  margin-bottom: 25px;
 }
 
 .search {
@@ -308,11 +318,14 @@ fieldset {
   display: block;
   padding: 6px 16px;
 }
+
 .advantages-title {
   text-align: center;
   font-size: 21px;
   margin: 0;
   max-width: 200px;
+  order: -1;
+  margin-bottom: 25px;
 }
 
 .item-text {
@@ -410,10 +423,15 @@ fieldset {
   line-height: 26px;
 }
 
+.sort-title {
+  margin-right: 45px;
+}
+
 .sort-filter-subheading {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+  margin-right: 38px;
 }
 
 .sort-label {
@@ -690,7 +708,6 @@ input::-webkit-inner-spin-button {
 .icon {
   fill: #cacaca;
 }
-
 
 /* ----------------------------Footer------------------------------------- */
 
