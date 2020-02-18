@@ -451,7 +451,7 @@ fieldset {
 }
 
 .search-submit {
-  width: 458px;
+  width: 100%;
   font-size: 21px;
   line-height: 26px;
   padding: 20px 50px;
