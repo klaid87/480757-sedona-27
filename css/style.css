@@ -533,6 +533,14 @@ fieldset {
   display: flex;
 }
 
+.sort-filter-item:nth-child(-n+2) {
+  margin-right: 30px;
+}
+
+.sort-filter-item:nth-child(3) {
+  margin-right: 525px;
+}
+
 .catalog-item {
   display: flex;
   border-bottom: 2px solid #f2f2f2;
@@ -606,7 +614,14 @@ fieldset {
 }
 
 input[type="radio"] + label {
-  color: #5496bd;
+  border-bottom: 1px dotted #81b3d2;
+  color: #cacaca;
+  cursor: pointer;
+}
+
+input[type="radio"] + label.sort-label--active {
+  color: #81b3d2;
+  border-bottom: none; 
 }
 
 input::-webkit-outer-spin-button,
