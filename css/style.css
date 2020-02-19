@@ -242,6 +242,9 @@ fieldset {
 .feedback-field {
   background-color: #f2f2f2;
   border: none;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .feedback-field:hover {
@@ -250,6 +253,7 @@ fieldset {
 
 .feedback-field:focus {
   background-color: #ffffff;
+  outline-color: #e5e5e5 ;
 }
 
 .search-label {
@@ -531,6 +535,7 @@ fieldset {
 
 .sort-filter-list {
   display: flex;
+  flex-grow: 1;
 }
 
 .sort-filter-item:nth-child(-n+2) {
@@ -538,7 +543,7 @@ fieldset {
 }
 
 .sort-filter-item:nth-child(3) {
-  margin-right: 525px;
+  margin-right: auto;
 }
 
 .catalog-item {
