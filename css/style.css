@@ -546,6 +546,10 @@ fieldset {
   margin-right: auto;
 }
 
+.sort-filter-item:last-of-type {
+  margin-left: 12px;
+}
+
 .catalog-item {
   display: flex;
   border-bottom: 2px solid #f2f2f2;
@@ -658,10 +662,6 @@ input::-webkit-inner-spin-button {
   background: url("../img/svg/calendar.svg") no-repeat center;
 }
 
-.input-checkbox {
-  display: none;
-}
-
 .input-checkbox + label::before {
   content: "";
   background-image: url("../img/svg/checkbox-off.svg");
@@ -670,7 +670,7 @@ input::-webkit-inner-spin-button {
   display: inline-block;
   vertical-align: middle;
   margin-right: 15px;
-  width: 25px;
+  width: 28px;
   height: 25px;
   cursor: pointer;
 }
@@ -683,7 +683,7 @@ input::-webkit-inner-spin-button {
   display: inline-block;
   vertical-align: middle;
   margin-right: 15px;
-  width: 25px;
+  width: 28px;
   height: 25px;
   cursor: pointer;
 }
@@ -741,7 +741,6 @@ input[type="radio"]:active + label {
 input[type="radio"] + .sort-label--icon {
   border-bottom: none;
 }
-
 
 /* ----------------------------Footer------------------------------------- */
 
