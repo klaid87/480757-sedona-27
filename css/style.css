@@ -741,7 +741,11 @@ input[type="radio"]:active + label {
 input[type="radio"] + .sort-label--icon {
   border-bottom: none;
 }
-
+/* Тренеровачные стили */
+.form-show {
+  display: none;
+}
+/* -------------------- */
 /* ----------------------------Footer------------------------------------- */
 
 .page-footer {
