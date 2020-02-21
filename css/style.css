@@ -368,7 +368,7 @@ fieldset {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
-  margin-bottom: 28px;
+  margin-bottom: 12px;
 }
 
 .filter {
@@ -403,6 +403,9 @@ fieldset {
   background-color: transparent;
   border: 2px solid #ffffff;
   font-weight: 400;
+  padding: 8px 35px;
+  display: block;
+  margin: 0 auto;
 }
 
 .filter-button:hover,
@@ -665,31 +668,36 @@ input::-webkit-inner-spin-button {
 .input-checkbox + label::before {
   content: "";
   background-image: url("../img/svg/checkbox-off.svg");
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
   margin-right: 15px;
-  width: 28px;
-  height: 25px;
+  width: 27px;
+  height: 23px;
   cursor: pointer;
 }
 
 .input-checkbox:checked + label::before {
   content: "";
   background-image: url("../img/svg/checkbox-on.svg");
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
   margin-right: 15px;
-  width: 28px;
-  height: 25px;
+  width: 27px;
+  height: 23px;
   cursor: pointer;
 }
 
+.filter-form-group {
+  margin: 0;
+  padding: 0;
+}
+
 .filter-form-group-first {
-  margin-right: 115px;
+  margin-right: 110px;
 }
 
 .rating-stars-list {
@@ -741,6 +749,92 @@ input[type="radio"]:active + label {
 input[type="radio"] + .sort-label--icon {
   border-bottom: none;
 }
+
+.filter-form-group-second {
+  margin-right: auto;
+}
+
+/* Фильтр */
+
+.filter-form-group-third {
+  width: 330px;
+}
+
+.filter-form-controls {
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+  height: 36px;
+  border: 2px solid #ffffff;
+}
+
+.filter-form-controls::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.filter-form-controls label {
+  font-size: 14px;
+  line-height: 32px;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.filter-form-controls .min-price,
+.filter-form-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.filter-form-controls input {
+  width: 50px;
+  margin: 0;
+  border: none;
+  color: #ffffff;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.bar {
+  width: 80%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 20px;
+  height: 23px;
+  background-image: url("../img/svg/filter-button.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+/* Фильтр */
 /* Тренеровачные стили */
 .form-show {
   display: none;
