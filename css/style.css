@@ -289,6 +289,7 @@ fieldset {
 
 .catalog-discription-wrapper {
   margin-bottom: 14px;
+  display: flex;
 }
 
 .button--details {
@@ -310,10 +311,20 @@ fieldset {
   color: #cacaca;
 }
 
-.structure,
-.cost {
+.catalog-type,
+.catalog-cost {
   color: #333333;
   font-weight: 400;
+  display: block;
+}
+
+.catalog-type {
+  width: 112px;
+  margin-right: 10px;
+}
+
+.catalog-cost {
+  width: 142px;
 }
 
 .catalog-item-rating {
@@ -631,7 +642,7 @@ input[type="radio"] + label {
   cursor: pointer;
 }
 
-input[type="radio"] + label.sort-label--active {
+input[type="radio"] + .sort-label--active {
   color: #81b3d2;
   border-bottom: none; 
 }
@@ -754,7 +765,7 @@ input[type="radio"] + .sort-label--icon {
   margin-right: auto;
 }
 
-/* Фильтр */
+/*---------------------- Фильтр-------------------------------- */
 
 .filter-form-group-third {
   width: 330px;
@@ -834,7 +845,20 @@ input[type="radio"] + .sort-label--icon {
 .range-toggle-max {
   left: 80%;
 }
-/* Фильтр */
+/*------------------- Фильтр--------------------------------- */
+
+.sort-label--icon:hover svg {
+  fill: #000000;
+}
+
+.sort-label--icon:active svg {
+  fill:#81b3d2;
+}
+
+.sort-label-active--icon svg {
+  fill: #81b3d2;
+}
+
 /* Тренеровачные стили */
 .form-show {
   display: none;

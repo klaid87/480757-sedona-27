@@ -92,118 +92,121 @@
             <button class="button button-tetriary filter-button" type="submit">показать</button>
           </fieldset>
         </form>
-        <section class="sort-filter">
-          <b class="sort-title">Найдено: <span class="sort-title-quantity">3</span></b>
-          <h2 class="sort-filter-subheading">Сортировка:</h2>
-          <ul class="sort-filter-list">
-            <li class="sort-filter-item">
-              <input id="price-filter" class="visually-hidden" type="radio" name="filter" value="price">
-              <label class="sort-label sort-label--active" for="price-filter">По цене</label>
-            </li>
-            <li class="sort-filter-item">
-              <input id="type-filter" class="visually-hidden" type="radio" name="filter" value="type">
-              <label class="sort-label" for="type-filter">По типу</label>
-            </li>
-            <li class="sort-filter-item">
-              <input id="rating-filter" class="visually-hidden" type="radio" name="filter" value="rating">
-              <label class="sort-label" for="rating-filter">По рейтингу</label>
-            </li>
-            <li class="sort-filter-item">
-              <input id="rating-filter" class="visually-hidden" type="radio" name="filter" value="up">
-              <label class="sort-label sort-label--icon" for="rating-filter">
-                <span class="visually-hidden">Сортировка по рейтингу вверх</span>
-                <svg class="icon icon-up" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px"
-                  viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                  <polygon points="5.5,0 0,10 11,10 " />
-                </svg>
-              </label>
-            </li>
-            <li class="sort-filter-item">
-              <input id="rating-filter" class="visually-hidden" type="radio" name="filter" value="down">
-              <label class="sort-label sort-label--icon" for="rating-filter">
-                <span class="visually-hidden">Сортировка по рейтингу вниз</span>
-                <svg class="icon icon-down" aria-hidden="true" version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                  <polyline points="5.5,10 0,0 11,0 " />
-                </svg>
-              </label>
-            </li>
-          </ul>
-        </section>
-        <section class="search-results">
-          <h2 class="visually-hidden">Результаты поиска</h2>
-          <ul class="catalog-list">
-            <li class="catalog-item">
-              <div class="catalog-content-wrapper-left">
-                <h3 class="catalog-heading">
-                  <a class="catalog-link" href="#">Amara Resort & Spa</a>
-                </h3>
-                <div class="catalog-discription-wrapper">
-                  <span class="structure">Гостиница</span>
-                  <span class="cost">От 4000 Р.</span>
-                </div>
-                <a class="button button-secondary button--details" href="#">Подробнее</a><!--
+      </section>
+      <section class="sort-filter">
+        <b class="sort-title">Найдено: <span class="sort-title-quantity">3</span></b>
+        <h2 class="sort-filter-subheading">Сортировка:</h2>
+        <ul class="sort-filter-list">
+          <li class="sort-filter-item">
+            <input id="price-filter" class="visually-hidden" type="radio" name="filter" value="price">
+            <label class="sort-label sort-label--active" for="price-filter">По цене</label>
+          </li>
+          <li class="sort-filter-item">
+            <input id="type-filter" class="visually-hidden" type="radio" name="filter" value="type">
+            <label class="sort-label" for="type-filter">По типу</label>
+          </li>
+          <li class="sort-filter-item">
+            <input id="rating-filter" class="visually-hidden" type="radio" name="filter" value="rating">
+            <label class="sort-label" for="rating-filter">По рейтингу</label>
+          </li>
+          <li class="sort-filter-item">
+            <input id="rating-filter-up" class="visually-hidden" type="radio" name="filter" value="up">
+            <label class="sort-label sort-label--icon" for="rating-filter-up">
+              <span class="visually-hidden">Сортировка по рейтингу вверх</span>
+              <svg class="icon icon-up" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px"
+                viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                <polygon points="5.5,0 0,10 11,10 " />
+              </svg>
+            </label>
+          </li>
+          <li class="sort-filter-item">
+            <input id="rating-filter-down" class="visually-hidden" type="radio" name="filter" value="down">
+            <label class="sort-label sort-label--icon sort-label-active--icon" for="rating-filter-down">
+              <span class="visually-hidden">Сортировка по рейтингу вниз</span>
+              <svg class="icon icon-down" aria-hidden="true" version="1.1" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                <polyline points="5.5,10 0,0 11,0 " />
+              </svg>
+            </label>
+          </li>
+        </ul>
+      </section>
+      <section class="search-results">
+        <h2 class="visually-hidden">Результаты поиска</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <div class="catalog-content-wrapper-left">
+              <h3 class="catalog-heading">
+                <a class="catalog-link" href="#">Amara Resort & Spa</a>
+              </h3>
+              <div class="catalog-discription-wrapper">
+                <span class="catalog-type">Гостиница</span>
+                <span class="catalog-cost">От 4000 Р.</span>
+              </div>
+              <a class="button button-secondary button--details" href="#">Подробнее</a>
+              <!--
               --><button class="button button-primary button--order" type="button">Забронировать</button>
+            </div>
+            <div class="catalog-content-wrapper-right">
+              <ul class="rating-stars-list">
+                <li class="rating-stars-item"></li>
+                <li class="rating-stars-item"></li>
+                <li class="rating-stars-item"></li>
+                <li class="rating-stars-item"></li>
+              </ul>
+              <span class="catalog-item-rating">Рейтинг: 8,5</span>
+            </div>
+            <img class="catalog-image" src="img/hotels/amara.jpg" width="135" height="90" alt="Картинка гостиницы">
+          </li>
+          <li class="catalog-item">
+            <div class="catalog-content-wrapper-left">
+              <h3 class="catalog-heading">
+                <a class="catalog-link" href="#">Desert Quail Inn</a>
+              </h3>
+              <div class="catalog-discription-wrapper">
+                <span class="catalog-type">Мотель</span>
+                <span class="catalog-cost">От 3000 Р.</span>
               </div>
-              <div class="catalog-content-wrapper-right">
-                <ul class="rating-stars-list">
-                  <li class="rating-stars-item"></li>
-                  <li class="rating-stars-item"></li>
-                  <li class="rating-stars-item"></li>
-                  <li class="rating-stars-item"></li>
-                </ul>
-                <span class="catalog-item-rating">Рейтинг: 8,5</span>
-              </div>
-              <img class="catalog-image" src="img/hotels/amara.jpg" width="135" height="90" alt="Картинка гостиницы">
-            </li>
-            <li class="catalog-item">
-              <div class="catalog-content-wrapper-left">
-                <h3 class="catalog-heading">
-                  <a class="catalog-link" href="#">Desert Quail Inn</a>
-                </h3>
-                <div class="catalog-discription-wrapper">
-                  <span class="structure">Мотель</span>
-                  <span class="cost">От 3000 Р.</span>
-                </div>
-                <a class="button button-secondary button--details" href="#">Подробнее</a><!--
+              <a class="button button-secondary button--details" href="#">Подробнее</a>
+              <!--
                 --><button class="button button-primary button--order" type="button">Забронировать</button>
+            </div>
+            <div class="catalog-content-wrapper-right">
+              <ul class="rating-stars-list">
+                <li class="rating-stars-item"></li>
+                <li class="rating-stars-item"></li>
+                <li class="rating-stars-item"></li>
+              </ul>
+              <span class="catalog-item-rating">Рейтинг: 8,9</span>
+            </div>
+            <img class="catalog-image" src="img/hotels/desert.jpg" width="135" height="90" alt="Картинка мотеля">
+          </li>
+          <li class="catalog-item">
+            <div class="catalog-content-wrapper-left">
+              <h3 class="catalog-heading">
+                <a class="catalog-link" href="#">Villas at Poco Diablo</a>
+              </h3>
+              <div class="catalog-discription-wrapper">
+                <span class="catalog-type">Апартаменты</span>
+                <span class="catalog-cost">От 2000 Р.</span>
               </div>
-              <div class="catalog-content-wrapper-right">
-                <ul class="rating-stars-list">
-                  <li class="rating-stars-item"></li>
-                  <li class="rating-stars-item"></li>
-                  <li class="rating-stars-item"></li>
-                </ul>
-                <span class="catalog-item-rating">Рейтинг: 8,9</span>
-              </div>
-              <img class="catalog-image" src="img/hotels/desert.jpg" width="135" height="90" alt="Картинка мотеля">
-            </li>
-            <li class="catalog-item">
-              <div class="catalog-content-wrapper-left">
-                <h3 class="catalog-heading">
-                  <a class="catalog-link" href="#">Villas at Poco Diablo</a>
-                </h3>
-                <div class="catalog-discription-wrapper">
-                  <span class="structure">Апартаменты</span>
-                  <span class="cost">От 2000 Р.</span>
-                </div>
-                <a class="button button-secondary button--details" href="#">Подробнее</a><!--
+              <a class="button button-secondary button--details" href="#">Подробнее</a>
+              <!--
               --><button class="button button-primary button--order" type="button">Забронировать</button>
-              </div>
-              <div class="catalog-content-wrapper-right">
-                <ul class="rating-stars-list">
-                  <li class="rating-stars-item"></li>
-                  <li class="rating-stars-item"></li>
-                </ul>
-                <span class="catalog-item-rating">Рейтинг: 9,2</span>
-              </div>
-              <img class="catalog-image" src="img/hotels/villas.jpg" width="135" height="90"
-                alt="Картинка аппартаментов">
-            </li>
-          </ul>
-        </section>
+            </div>
+            <div class="catalog-content-wrapper-right">
+              <ul class="rating-stars-list">
+                <li class="rating-stars-item"></li>
+                <li class="rating-stars-item"></li>
+              </ul>
+              <span class="catalog-item-rating">Рейтинг: 9,2</span>
+            </div>
+            <img class="catalog-image" src="img/hotels/villas.jpg" width="135" height="90" alt="Картинка аппартаментов">
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer class="page-footer">
