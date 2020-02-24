@@ -645,6 +645,7 @@ input::-webkit-inner-spin-button {
 }
 
 .feedback-field-date {
+  position: relative;
   width: 345px;
   padding-top: 14px;
   padding-right: 9px;
@@ -656,13 +657,6 @@ input::-webkit-inner-spin-button {
   width: 114px;
   padding: 14px 13px;
   text-align: center;
-}
-
-.feedback-field-date::after {
-  content: "";
-  width: 25px;
-  height: 25px;
-  background: url("../img/svg/calendar.svg") no-repeat center;
 }
 
 .input-checkbox + label::before {
@@ -855,6 +849,28 @@ input[type="radio"]:checked + label svg {
 .catalog-type,
 .catalog-cost {
   margin-bottom: 14px;
+}
+
+.calendar {
+  position: absolute;
+  right: 70px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.icon-calendar {
+  fill: #cacaca;
+}
+
+.calendar:hover svg,
+.calendar:focus svg {
+  fill: #000000;
+}
+
+.calendar:active svg {
+  fill: #81b3d2;
 }
 
 /* Тренеровачные стили */
