@@ -244,6 +244,7 @@ fieldset {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+  flex-grow: 1;
 }
 
 .feedback-field:hover {
@@ -256,6 +257,7 @@ fieldset {
 }
 
 .search-label {
+  width: 114px;
   line-height: 26px;
 }
 
@@ -514,10 +516,10 @@ fieldset {
 }
 
 .field-wrapper {
+  position: relative;
   margin: 0;
   margin-bottom: 30px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -645,8 +647,6 @@ input::-webkit-inner-spin-button {
 }
 
 .feedback-field-date {
-  position: relative;
-  width: 345px;
   padding-top: 14px;
   padding-right: 9px;
   padding-bottom: 14px;
@@ -853,7 +853,7 @@ input[type="radio"]:checked + label svg {
 
 .calendar {
   position: absolute;
-  right: 70px;
+  right: 15px;
   border: none;
   padding: 0;
   margin: 0;
@@ -873,8 +873,12 @@ input[type="radio"]:checked + label svg {
   fill: #81b3d2;
 }
 
+.input-checkbox:disabled + label {
+  color: #6a6a6a;
+}
+
 /* Тренеровачные стили */
-.form-show {
+.form-hide {
   display: none;
 }
 /* -------------------- */
@@ -899,6 +903,8 @@ input[type="radio"]:checked + label svg {
 }
 
 .footer-contact {
+  display: flex;
+  flex-direction: column;
   margin: 0;
 }
 
@@ -907,6 +913,10 @@ input[type="radio"]:checked + label svg {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+}
+
+.link-hashtag {
+  margin-bottom: 5px;
 }
 
 .link-hashtag:hover,
