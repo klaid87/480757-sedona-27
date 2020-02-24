@@ -287,15 +287,9 @@ fieldset {
   margin-bottom: 7px;
 }
 
-.catalog-discription-wrapper {
-  margin-bottom: 14px;
-  display: flex;
-}
-
 .button--details {
   display: inline-block;
   padding: 6px 17px;
-  margin-right: 6px;
 }
 
 .catalog-link {
@@ -316,15 +310,6 @@ fieldset {
   color: #333333;
   font-weight: 400;
   display: block;
-}
-
-.catalog-type {
-  width: 112px;
-  margin-right: 10px;
-}
-
-.catalog-cost {
-  width: 142px;
 }
 
 .catalog-item-rating {
@@ -397,6 +382,7 @@ fieldset {
 .input-checkbox + label {
   color: #ffffff;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .input-text {
@@ -642,7 +628,7 @@ input[type="radio"] + label {
   cursor: pointer;
 }
 
-input[type="radio"] + .sort-label--active {
+input[type="radio"]:checked + label {
   color: #81b3d2;
   border-bottom: none; 
 }
@@ -761,8 +747,8 @@ input[type="radio"] + .sort-label--icon {
   border-bottom: none;
 }
 
-.filter-form-group-second {
-  margin-right: auto;
+.filter-form-group-third {
+  margin-left: auto;
 }
 
 /*---------------------- Фильтр-------------------------------- */
@@ -847,6 +833,10 @@ input[type="radio"] + .sort-label--icon {
 }
 /*------------------- Фильтр--------------------------------- */
 
+input[type="radio"]:checked + label svg {
+  fill: #81b3d2;
+}
+
 .sort-label--icon:hover svg {
   fill: #000000;
 }
@@ -855,8 +845,17 @@ input[type="radio"] + .sort-label--icon {
   fill:#81b3d2;
 }
 
-.sort-label-active--icon svg {
-  fill: #81b3d2;
+.catalog-inner-wrapper {
+  display: flex;
+}
+
+.catalog-discription-wrapper:not(:last-child) {
+  margin-right: 6px;
+}
+
+.catalog-type,
+.catalog-cost {
+  margin-bottom: 14px;
 }
 
 /* Тренеровачные стили */
