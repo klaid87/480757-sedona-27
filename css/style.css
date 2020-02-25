@@ -814,7 +814,11 @@ input[type="radio"] + .sorting-label--icon {
   background-image: url("../img/svg/filter-button.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transition: all 0.5s;
 }
 
 .range-toggle-min {
@@ -823,6 +827,13 @@ input[type="radio"] + .sorting-label--icon {
 
 .range-toggle-max {
   left: 80%;
+}
+
+.range-toggle-min:hover,
+.range-toggle-min:focus,
+.range-toggle-max:hover,
+.range-toggle-max:focus {
+  transform: scale(1.2);
 }
 /*------------------- Фильтр--------------------------------- */
 
