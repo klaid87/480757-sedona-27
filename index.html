@@ -104,7 +104,8 @@
             <input id="check-in" class="feedback-field feedback-field-date" type="text" name="date-check-in"
               value="24 апреля 2017">
             <button class="calendar" type="button">
-              <svg class="icon-calendar" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+              <svg class="icon-calendar" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="21" height="22"
+                viewBox="0 0 21 22">
                 <path
                   d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
                 <path
@@ -117,7 +118,8 @@
             <input id="check-out" class="feedback-field feedback-field-date" type="text" name="date-check-out"
               value="4 июля 2017">
             <button class="calendar" type="button">
-              <svg class="icon-calendar" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+              <svg class="icon-calendar" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="21" height="22"
+                viewBox="0 0 21 22">
                 <path
                   d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
                 <path
@@ -127,13 +129,29 @@
           </p>
           <p class="field-wrapper">
             <label class="search-label" for="adults">Взрослые:</label>
-            <input id="adults" class="feedback-field feedback-field-number" type="number" name="adults-amount"
-              value="2">
+            <span class="inner-wrapper">
+              <input id="adults" class="feedback-field feedback-field-number" type="number" name="adults-amount"
+                value="2">
+              <button class="button-increase button-minus" type="button">
+                <span class="visually-hidden">Кнопка уменьшения колличества взрослых</span>
+              </button>
+              <button class="button-increase button-plus" type="button">
+                <span class="visually-hidden">Кнопка увеличения колличества взрослых</span>
+              </button>
+            </span>
           </p>
           <p class="field-wrapper">
             <label class="search-label" for="children">Дети:</label>
-            <input id="children" class="feedback-field feedback-field-number" type="number" name="children-amount"
-              value="0">
+            <span class="inner-wrapper">
+              <input id="children" class="feedback-field feedback-field-number" type="number" name="children-amount"
+                value="0">
+              <button class="button-increase button-minus" type="button">
+                <span class="visually-hidden">Кнопка уменьшения колличества взрослых</span>
+              </button>
+              <button class="button-increase button-plus" type="button">
+                <span class="visually-hidden">Кнопка увеличения колличества взрослых</span>
+              </button>
+            </span>
           </p>
           <button class="button button-secondary search-submit" type="submit">Найти</button>
         </form>

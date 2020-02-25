@@ -858,6 +858,7 @@ input[type="radio"]:checked + label svg {
   padding: 0;
   margin: 0;
   outline: none;
+  background-color: transparent;
 }
 
 .icon-calendar {
@@ -875,6 +876,48 @@ input[type="radio"]:checked + label svg {
 
 .input-checkbox:disabled + label {
   color: #6a6a6a;
+}
+
+.button-increase {
+  position: absolute;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inner-wrapper {
+  position: relative;
+}
+
+.button-minus::before {
+  content: "";
+  position: absolute;
+  top: -23px;
+  left: 20px;
+  width: 10px;
+  height: 3px;
+  background-color: #818181;
+}
+
+.button-plus::before {
+  content: "";
+  position: absolute;
+  top: -23px;
+  right: -95px;
+  width: 10px;
+  height: 3px;
+  background-color: #818181;
+}
+
+.button-plus::after {
+  content: "";
+  position: absolute;
+  top: -23px;
+  right: -95px;
+  width: 10px;
+  height: 3px;
+  background-color: #818181;
+  transform: rotate(90deg);
 }
 
 /* Тренеровачные стили */
