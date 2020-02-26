@@ -86,8 +86,12 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
-              <button class="range-toggle range-toggle-min" type="button"></button>
-              <button class="range-toggle range-toggle-max" type="button"></button>
+              <button class="range-toggle range-toggle-min" type="button">
+                <span class="visually-hidden">Стоимость от</span>
+              </button>
+              <button class="range-toggle range-toggle-max" type="button">
+                <span class="visually-hidden">Стоимость до</span>
+              </button>
             </div>
             <button class="button button-tertiary filter-button" type="submit">показать</button>
           </fieldset>
@@ -121,8 +125,7 @@
             </label>
           </li>
           <li class="sorting-item">
-            <input id="rating-sorting-down" class="visually-hidden" type="radio" name="radio-icon" value="down"
-              checked>
+            <input id="rating-sorting-down" class="visually-hidden" type="radio" name="radio-icon" value="down" checked>
             <label class="sorting-label sorting-label--icon" for="rating-sorting-down">
               <span class="visually-hidden">Сортировка по рейтингу вниз</span>
               <svg class="icon icon-down" aria-hidden="true" version="1.1" id="Layer_1"

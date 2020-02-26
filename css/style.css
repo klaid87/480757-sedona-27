@@ -167,6 +167,7 @@ fieldset {
 }
 
 .search {
+  position: relative;
   background-color: #ffffff;
   padding-top: 55px;
 }
@@ -210,7 +211,6 @@ fieldset {
   width: 570px;
   font-size: 21px;
   line-height: 26px;
-  position: relative;
   display: block;
   margin: 0 auto;
   padding: 35px 100px;
@@ -903,6 +903,7 @@ input[type="radio"]:checked + label svg {
   height: 11px;
   background-color: transparent;
   outline: none;
+  cursor: pointer;
 }
 
 .button-increase::before,
@@ -942,6 +943,25 @@ input[type="radio"]:checked + label svg {
 }
 
 /* Тренеровачные стили */
+
+@keyframes show {
+  0% {
+    transform: translateY(-300px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .form-hide {
   display: none;
 }
