@@ -334,9 +334,11 @@ fieldset {
   font-weight: 400;
   margin: 0;
   text-align: center;
+  max-width: 100%;
 }
 
 .advantages-sublist {
+  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -352,6 +354,7 @@ fieldset {
 }
 
 .advantages-subtext {
+  max-width: 100%;
   font-weight: 400;
   color: #333333;
   text-align: center;
@@ -490,7 +493,7 @@ fieldset {
 .advantages-item:nth-child(n+3),
 .advantages-subitem {
   background-color: #eeeeee;
-  max-width: calc(100% / 3);
+  width: calc(100% / 3);
   padding: 40px 69px 40px;
   flex-direction: column;
   align-items: center;
@@ -508,6 +511,7 @@ fieldset {
   max-width: 400px;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   align-items: center;
   background-color: #81b3d2;
   color: #ffffff;
@@ -609,13 +613,13 @@ fieldset {
 }
 
 .advantages-image-right {
-  width: 800px;
+  flex-grow: 1;
   height: 256px;
   background: url("../img/background/sedona.jpg") no-repeat center;
 }
 
 .advatages-image-left {
-  width: 800px;
+  flex-grow: 1;
   height: 256px;
   background: url("../img/background/devil-bridge.jpg") no-repeat center;
   order: -1;
