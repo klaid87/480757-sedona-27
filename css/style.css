@@ -1016,6 +1016,7 @@ input[type="radio"]:checked + label svg {
   list-style: none;
   display: flex;
   padding: 0;
+  margin: 0;
 }
 
 .social-item:not(:last-child) {
