@@ -101,8 +101,8 @@ fieldset {
 
 .menu-item {
   width: 25%;
-  margin-top: 20px;
-  margin-bottom: 17px;
+  margin-top: 14px;
+  margin-bottom: 16px;
 }
 
 .menu-item:nth-child(4n+3),
@@ -122,7 +122,7 @@ fieldset {
   background-image: url("../img/background/backgroundlogo.jpg");
   background-repeat: no-repeat;
   text-align: center;
-  padding: 75px 0;
+  padding: 76px 0;
 }
 
 .advantages {
@@ -136,7 +136,8 @@ fieldset {
   margin:0 auto;
   text-align: center;
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 26px;
+  line-height: 26px;
 }
 
 .advantages-text {
@@ -146,6 +147,7 @@ fieldset {
   text-align: center;
   margin: 0;
   padding-bottom: 52px;
+  line-height: 26px;
 }
 
 .advantages-list {
@@ -169,7 +171,7 @@ fieldset {
 .search {
   position: relative;
   background-color: #ffffff;
-  padding-top: 55px;
+  padding-top: 69px;
 }
 
 .search-heading {
@@ -178,7 +180,7 @@ fieldset {
   line-height: 36px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 38px;
+  margin-bottom: 24px;
 }
 
 .search-text {
@@ -213,7 +215,7 @@ fieldset {
   line-height: 26px;
   display: block;
   margin: 0 auto;
-  padding: 35px 100px;
+  padding: 24px 100px;
 }
 
 .button-primary:hover,
@@ -234,7 +236,7 @@ fieldset {
   position: absolute;
   left: 50%;
   transform: translatex(-50%);
-  padding: 55px;
+  padding: 58px;
   box-shadow: 3px 3px 7px 0px rgb(0, 0, 0, 0.35);
 }
 
@@ -325,9 +327,10 @@ fieldset {
   text-align: center;
   font-size: 21px;
   margin: 0;
-  max-width: 200px;
+  max-width: 151px;
   order: -1;
   margin-bottom: 25px;
+  line-height: 21px;
 }
 
 .item-text {
@@ -335,6 +338,7 @@ fieldset {
   margin: 0;
   text-align: center;
   max-width: 100%;
+  line-height: 21px;
 }
 
 .advantages-sublist {
@@ -350,7 +354,8 @@ fieldset {
   color: #000000;
   margin: 0;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+  line-height: 21px;
 }
 
 .advantages-subtext {
@@ -359,6 +364,7 @@ fieldset {
   color: #333333;
   text-align: center;
   margin: 0;
+  line-height: 21px;
 }
 
 .infrastructure {
@@ -494,7 +500,7 @@ fieldset {
 .advantages-subitem {
   background-color: #eeeeee;
   width: calc(100% / 3);
-  padding: 40px 69px 40px;
+  padding: 47px 69px 40px;
   flex-direction: column;
   align-items: center;
   display: flex;
@@ -504,7 +510,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 55px 40px;
+  padding: 55px 55px 82px;
 }
 
 .advantages-item-wrapper {
@@ -515,13 +521,13 @@ fieldset {
   align-items: center;
   background-color: #81b3d2;
   color: #ffffff;
-  padding: 40px 60px 40px;
+  padding: 47px 47px 40px;
 }
 
 .field-wrapper {
   position: relative;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   display: flex;
   align-items: center;
 }
@@ -534,6 +540,7 @@ fieldset {
 .field-wrapper:nth-child(3),
 .field-wrapper:nth-child(4) {
   width: 50%;
+  margin-bottom: 48px;
 }
 
 .field-wrapper:nth-child(4) {
@@ -597,7 +604,7 @@ fieldset {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .advantages-subitem--house::before {
@@ -650,10 +657,7 @@ input::-webkit-inner-spin-button {
 }
 
 .feedback-field-date {
-  padding-top: 14px;
-  padding-right: 9px;
-  padding-bottom: 14px;
-  padding-left: 13px;
+  padding: 14px 9px;
 }
 
 .feedback-field-number {
@@ -867,7 +871,7 @@ input[type="radio"]:checked + label svg {
 
 .calendar {
   position: absolute;
-  right: 15px;
+  right: 8px;
   border: none;
   padding: 0;
   margin: 0;
@@ -977,8 +981,8 @@ input[type="radio"]:checked + label svg {
   justify-content: space-between;
   align-items: center;
   padding-top: 35px;
-  padding-right: 100px;
-  padding-bottom: 35px;
+  padding-right: 89px;
+  padding-bottom: 26px;
   padding-left: 125px;
   background-color: #fefefe;
 }
@@ -1017,6 +1021,7 @@ input[type="radio"]:checked + label svg {
   display: flex;
   padding: 0;
   margin: 0;
+  margin-right: 46px;
 }
 
 .social-item:not(:last-child) {
