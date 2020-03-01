@@ -171,7 +171,7 @@ fieldset {
 .search {
   position: relative;
   background-color: #ffffff;
-  padding-top: 69px;
+  padding-top: 52px;
 }
 
 .search-heading {
@@ -504,7 +504,7 @@ fieldset {
 .advantages-subitem {
   background-color: #eeeeee;
   width: calc(100% / 3);
-  padding: 47px 69px 40px;
+  padding: 49px 69px 55px;
   flex-direction: column;
   align-items: center;
   display: flex;
@@ -525,7 +525,7 @@ fieldset {
   align-items: center;
   background-color: #81b3d2;
   color: #ffffff;
-  padding: 47px 47px 40px;
+  padding: 47px 48px 40px;
 }
 
 .field-wrapper {
