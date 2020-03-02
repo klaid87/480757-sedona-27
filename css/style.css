@@ -121,6 +121,7 @@ fieldset {
   position: relative;
   background-image: url("../img/background/backgroundlogo.jpg");
   background-repeat: no-repeat;
+  background-position: 0 -55px;
   text-align: center;
   padding: 76px 0;
 }
@@ -190,7 +191,7 @@ fieldset {
   width: 450px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 53px;
+  margin-bottom: 49px;
 }
 
 .button {
@@ -215,7 +216,7 @@ fieldset {
   line-height: 26px;
   display: block;
   margin: 0 auto;
-  padding: 24px 100px;
+  padding: 30px 100px;
 }
 
 .button-primary:hover,
@@ -236,7 +237,7 @@ fieldset {
   position: absolute;
   left: 50%;
   transform: translatex(-50%);
-  padding: 58px;
+  padding: 52px 57px;
   box-shadow: 3px 3px 7px 0px rgb(0, 0, 0, 0.35);
 }
 
@@ -429,7 +430,7 @@ fieldset {
   background-color: #fefefe;
   display: flex;
   align-items: center;
-  padding: 23px 72px;
+  padding: 24px 72px;
   border-bottom: 2px solid #f2f2f2;
 }
 
@@ -444,14 +445,14 @@ fieldset {
 }
 
 .sorting-title {
-  margin-right: 45px;
+  margin-right: 48px;
 }
 
 .sorting-subheading {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  margin-right: 42px;
+  margin-right: 38px;
 }
 
 .sorting-label {
@@ -474,7 +475,7 @@ fieldset {
   width: 100%;
   font-size: 21px;
   line-height: 26px;
-  padding: 20px 50px;
+  padding: 17px 50px;
 }
 
 .advatages-heading-wrapper {
@@ -544,11 +545,11 @@ fieldset {
 .field-wrapper:nth-child(3),
 .field-wrapper:nth-child(4) {
   width: 50%;
-  margin-bottom: 48px;
+  margin-bottom: 50px;
 }
 
 .field-wrapper:nth-child(4) {
-  padding-left: 53px;
+  padding-left: 51px;
 }
 
 .sorting-list {
@@ -995,10 +996,10 @@ input[type="radio"]:checked + label svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 35px;
-  padding-right: 89px;
+  padding-top: 34px;
+  padding-right: 87px;
   padding-bottom: 26px;
-  padding-left: 125px;
+  padding-left: 132px;
   background-color: #fefefe;
 }
 
@@ -1007,6 +1008,10 @@ input[type="radio"]:checked + label svg {
   width: 100%;
   bottom: 0;
   background-color: rgba(253, 253, 253, 0.9);
+  padding-top: 31px;
+  padding-right: 87px;
+  padding-bottom: 33px;
+  padding-left: 126px;
 }
 
 .footer-contact {
@@ -1036,7 +1041,7 @@ input[type="radio"]:checked + label svg {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-right: 46px;
+  margin-right: 49px;
 }
 
 .social-item:not(:last-child) {
