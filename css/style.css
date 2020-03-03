@@ -247,7 +247,8 @@ fieldset {
   flex-wrap: wrap;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  bottom: 0;
+  transform: translate(-50%, 100%);
   padding: 52px 57px;
   box-shadow: 3px 3px 7px 0px rgb(0, 0, 0, 0.35);
 }
@@ -301,7 +302,8 @@ fieldset {
   line-height: 26px;
   margin: 0;
   padding: 0;
-  margin-bottom: 6px;
+  margin-bottom: 11px;
+  margin-top: -6px; /* Для Pixel Perfect */
 }
 
 .button--details {
@@ -327,6 +329,7 @@ fieldset {
   color: #333333;
   font-weight: 400;
   display: block;
+  margin-bottom: 15px;
 }
 
 .catalog-item-rating {
@@ -406,6 +409,7 @@ fieldset {
 .input-checkbox + label {
   color: #ffffff;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .input-text {
@@ -429,7 +433,7 @@ fieldset {
   padding-bottom: 8px;
   padding-left: 35px;
   display: block;
-  margin: 0 auto;
+  margin: 0 12px 0 0;
 }
 
 .filter-button:hover,
@@ -870,6 +874,12 @@ input[type="radio"] + .sorting-label--icon {
 .range-toggle-max:focus {
   transform: scale(1.2);
 }
+
+.filter-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 /*------------------- Фильтр--------------------------------- */
 
 input[type="radio"]:checked + label svg {
@@ -890,11 +900,6 @@ input[type="radio"]:checked + label svg {
 
 .catalog-discription-wrapper:not(:last-child) {
   margin-right: 6px;
-}
-
-.catalog-type,
-.catalog-cost {
-  margin-bottom: 14px;
 }
 
 .calendar {
