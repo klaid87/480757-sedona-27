@@ -110,10 +110,21 @@ fieldset {
   text-align: right;
 }
 
-.main-navigation {
-  padding: 0 72px;
+.menu-item:nth-child(4n+1) {
+  padding-left: 72px;
 }
 
+.menu-item:nth-child(4n+4) {
+  padding-right: 72px;
+}
+
+.menu-item:nth-child(4n+2) {
+  padding-left: 13px;
+}
+
+.menu-item:nth-child(4n+3) {
+  padding-right: 15px;
+}
 
 /* ----------------------------Main------------------------------------- */
 
@@ -236,7 +247,7 @@ fieldset {
   flex-wrap: wrap;
   position: absolute;
   left: 50%;
-  transform: translatex(-50%);
+  transform: translateX(-50%);
   padding: 52px 57px;
   box-shadow: 3px 3px 7px 0px rgb(0, 0, 0, 0.35);
 }
@@ -248,6 +259,7 @@ fieldset {
   font-weight: 700;
   text-transform: uppercase;
   flex-grow: 1;
+  height: 38px;
 }
 
 .feedback-field:hover {
@@ -532,7 +544,7 @@ fieldset {
 .field-wrapper {
   position: relative;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
 }
@@ -545,7 +557,7 @@ fieldset {
 .field-wrapper:nth-child(3),
 .field-wrapper:nth-child(4) {
   width: 50%;
-  margin-bottom: 50px;
+  margin-bottom: 54px;
 }
 
 .field-wrapper:nth-child(4) {
@@ -665,7 +677,7 @@ input::-webkit-inner-spin-button {
 }
 
 .feedback-field-date {
-  padding: 14px 9px;
+  padding: 0 9px;
 }
 
 .feedback-field-number {
@@ -964,6 +976,12 @@ input[type="radio"]:checked + label svg {
 .button-increase:active::before,
 .button-increase:active::after {
   background-color: #81b3d2;
+}
+
+.location {
+  background: url("../img/background/map.jpg") no-repeat center;
+  background-size: contain;
+  min-height: 593px;
 }
 
 /* Тренеровачные стили */
