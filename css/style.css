@@ -1031,9 +1031,9 @@ input[type="radio"]:checked + label svg {
   width: 100%;
   bottom: 0;
   background-color: rgba(253, 253, 253, 0.9);
-  padding-top: 31px;
-  padding-right: 87px;
-  padding-bottom: 33px;
+  padding-top: 32px;
+  padding-right: 88px;
+  padding-bottom: 37px;
   padding-left: 126px;
 }
 
