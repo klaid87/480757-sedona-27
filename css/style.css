@@ -686,7 +686,7 @@ input::-webkit-inner-spin-button {
 
 .feedback-field-number {
   width: 114px;
-  padding: 14px 13px;
+  padding: 0px 13px;
   text-align: center;
 }
 
@@ -905,6 +905,8 @@ input[type="radio"]:checked + label svg {
 .calendar {
   position: absolute;
   right: 8px;
+  bottom: 50%;
+  transform: translateY(50%);
   border: none;
   padding: 0;
   margin: 0;
