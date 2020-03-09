@@ -96,7 +96,7 @@ fieldset {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 10;
 }
 
 .menu-item {
@@ -138,6 +138,8 @@ fieldset {
 }
 
 .advantages {
+  position: relative;
+  z-index: 2;
   background-color: #ffffff;
 }
 
@@ -184,6 +186,7 @@ fieldset {
   position: relative;
   background-color: #ffffff;
   padding-top: 52px;
+  z-index: 2;
 }
 
 .search-heading {
@@ -995,24 +998,57 @@ input[type="radio"]:checked + label svg {
 
 @keyframes show {
   0% {
-    transform: translateY(-300px);
+    transform: translate(-50%, -100%);
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translate(-50%, 90%);
   }
 
   90% {
-    transform: translateY(-10px);
+    transform: translate(-50%, 95%);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, 100%);
+  }
+}
+
+@keyframes hide {
+  0% {
+    transform: translate(-50%, 100%);
+  }
+
+  100% {
+    transform: translate(-50%, 0);
   }
 }
 
 .form-hide {
   display: none;
+}
+
+.search-form--show {
+  animation: show 1s forwards;
+}
+
+.search-form--hide {
+  animation: hide 1s forwards;
+}
+
+.section-form {
+  position: relative;
+}
+
+input[type=text]::-ms-clear {  
+  display: none; 
+  width : 0; 
+  height: 0; 
+}
+input[type=text]::-ms-reveal {  
+  display: none; 
+  width : 0; 
+  height: 0; 
 }
 /* -------------------- */
 /* ----------------------------Footer------------------------------------- */
