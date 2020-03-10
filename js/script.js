@@ -34,7 +34,9 @@ for (var i = 0; i < fieldWrappers.length; i++) {
             evt.preventDefault();
             var button = evt.target;
             var field = button.parentNode.querySelector('input');
-            field.value = Number(field.value) - 1;
+            if (field.value > 0) {
+                field.value = Number(field.value) - 1;
+            }
         } else if (evt.target.classList.contains('button-plus')) {
             evt.preventDefault();
             var button = evt.target;
