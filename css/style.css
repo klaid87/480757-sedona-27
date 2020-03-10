@@ -272,7 +272,7 @@ fieldset {
 
 .feedback-field:focus {
   background-color: #ffffff;
-  outline-color: #e5e5e5 ;
+  outline: 2px solid  #e5e5e5;
 }
 
 .search-label {
@@ -1006,7 +1006,7 @@ input[type="radio"]:checked + label svg {
   }
 
   90% {
-    transform: translate(-50%, 95%);
+    transform: translate(-50%, 80%);
   }
 
   100% {
