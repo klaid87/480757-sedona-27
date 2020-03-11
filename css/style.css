@@ -997,8 +997,6 @@ input[type="radio"]:checked + label svg {
   background: url("../img/background/map.jpg") no-repeat center;
   background-size: contain;
   min-height: 593px;
-  position: relative;
-  z-index: -1;
 }
 
 /* Тренеровачные стили */
