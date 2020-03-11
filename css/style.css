@@ -152,6 +152,7 @@ fieldset {
   padding-top: 60px;
   padding-bottom: 26px;
   line-height: 26px;
+  font-weight: 700;
 }
 
 .advantages-text {
@@ -196,6 +197,7 @@ fieldset {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 24px;
+  font-weight: 700;
 }
 
 .search-text {
@@ -307,6 +309,7 @@ fieldset {
   padding: 0;
   margin-bottom: 11px;
   margin-top: -6px; /* Для Pixel Perfect */
+  font-weight: 700;
 }
 
 .button--details {
@@ -350,6 +353,7 @@ fieldset {
   order: -1;
   margin-bottom: 25px;
   line-height: 21px;
+  font-weight: 700;
 }
 
 .item-text {
@@ -375,6 +379,7 @@ fieldset {
   text-align: center;
   margin-bottom: 24px;
   line-height: 21px;
+  font-weight: 700;
 }
 
 .advantages-subtext {
@@ -992,6 +997,8 @@ input[type="radio"]:checked + label svg {
   background: url("../img/background/map.jpg") no-repeat center;
   background-size: contain;
   min-height: 593px;
+  position: relative;
+  z-index: -1;
 }
 
 /* Тренеровачные стили */
